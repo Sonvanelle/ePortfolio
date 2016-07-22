@@ -18,9 +18,9 @@ a {
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(128, 0, 128, 0.5);
-  border-color: rgba(204,153, 204, 1.0);
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(128, 0, 128, 0.3);
+  border-color: rgba(204,153, 204, 0.5);
   border-style: solid;
   border-width: 1px;
   border-radius: 0.3rem;
@@ -57,7 +57,7 @@ a {
   color: #fff;
   text-align: center;
   background-color: #159957;
-  background-image: url(http://i.imgur.com/aGnJ48Z.jpg); }
+  background-image: url(http://imgur.com/a/iS1So); }
 
 @media screen and (min-width: 64em) {
   .page-header {
