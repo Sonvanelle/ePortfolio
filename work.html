@@ -199,6 +199,53 @@
           <div class="desc">The other banner on the About page.</div>
         </div>
       </div>
+      
+      
+      
+      <div class="w3-row">
+  <a href="#" onclick="openCity(event, 'London');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Currency Converter</div>
+  </a>
+  <a href="#" onclick="openCity(event, 'Paris');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">RC4-Python</div>
+  </a>
+  <a href="#" onclick="openCity(event, 'Tokyo');">
+    <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">BBS-Python</div>
+  </a>
+</div>
+
+<div id="London" class="w3-container city">
+  <p>This was to test API usage with the JSON format. The source is fixer.io!</p>
+  <iframe src="https://trinket.io/embed/python3/50bafdf470" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+<div id="Paris" class="w3-container city">
+  <p>RC4 impementation in Python.</p> 
+  <iframe src="https://trinket.io/embed/python3/70bb656d0f?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</div>
+
+<div id="Tokyo" class="w3-container city">
+  <p>Blum-Goldwasser in Python (feat. Ming Wei)</p>
+  <iframe src="https://trinket.io/embed/python3/d02beab08c?toggleCode=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-border-red";
+}
+</script>
+
 
       
       
@@ -217,7 +264,7 @@
 
    </section>    
 
-      <footer class="site-footer">
+    <footer class="site-footer">
          <ul class="w3-navbar w3-blue-grey w3-padding-xlarge">
           <li><a href="https://github.com/Sonvanelle">Github</a></li>
           <li><a href="https://sg.linkedin.com/in/charles-chan-00186111b">LinkedIn</a></li>
@@ -226,8 +273,7 @@
         
           <p>This page's stylesheet is based of the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> and w3.css.</p>
         </ul>
-<br>
-      </footer>
+    </footer>
 
  
 
